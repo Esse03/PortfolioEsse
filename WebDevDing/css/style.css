@@ -1,0 +1,70 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/78/37/8a/78378a80e6fb911b38bf60291bb49bd8.gif);
+    color: BlueViolet;
+    margin: 5vw;
+    text-align: center;
+    font-family: 'Papyrus';
+    
+  }
+  
+  div {
+    background-image: url(https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000);
+    padding: 5vw;
+    border: 5px ridge;
+  }
+  
+  p:hover {
+    color: black;
+  }
+  
+  ul:hover {
+    color: black;
+  }
+  
+  H1:hover {
+    font-size: 32pt;
+    font-weight: bolder;
+    text-shadow: 2px 2px Chartreuse;
+  }
+  
+  H2:hover {
+    font-size: 28pt;
+    font-weight: bolder;
+    text-shadow: 2px 2px Chartreuse;
+  }
+  
+  H3:hover {
+    font-size: 24pt;
+    font-weight: bolder;
+    text-shadow: 2px 2px Chartreuse;
+  }
+  
+  img {
+    width: 300px;
+    border-radius: 50px;
+    border: 3px outset;
+    background: white;
+  }
+  
+  img:hover {
+    border: 3px inset;
+      background-image: url(https://64.media.tumblr.com/661257c6e0872fbe2a1a63eb4ee6710f/e93fd7e323bf1955-e1/s400x600/0560f4ff8c8f14b670d190b0e4cf6b90e7766cbe.gif);
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'copperplate';
+    color: Teal;
+  }
+  
+  a:hover {
+    border: 3px inset;
+    background: white;
+  }
+
+  a:visited {
+    font-style: italic;
+    border-style: double;
+    border-color:rgb(255, 216, 154)
+  }
