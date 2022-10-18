@@ -92,7 +92,7 @@ img:hover {
 .stud {
   object-fit: cover;
   height: 45vh;
-  width: 30%;
+  width: 45vw;
   border-radius: 50px;
   border: 0.4vw outset;
 }
@@ -173,18 +173,17 @@ img:hover {
       display: flex;
     justify-content: space-between;
     align-items: center
-    object-position: center;
     }
 
     #scroll {
       overflow-x:scroll;
-      width: 80vw;
+      width:90vw;
       justify-content: flex-start;
       box-shadow: 1vw 0 1vw gray;
     }
 
     .stud {
-      width: 100%;
+      width: 80vw;
       object-position: center;
     }
     
