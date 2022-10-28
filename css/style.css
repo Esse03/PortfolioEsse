@@ -1,5 +1,5 @@
 body {
-  background-image: url(img/spazzyback.gif);
+  background-image: url(./img/spazzyback.gif);
   color: BlueViolet;
   margin: 0 auto;
   text-align: center;
@@ -43,7 +43,7 @@ nav {
 }
 
 header {
-  background-image: url(/img/notebook.jpeg);
+  background-image: url(img/notebook.jpeg);
   background-size: cover;
   height: 60vh;
   background-position: center;
@@ -62,7 +62,7 @@ section {
 
 img:hover {
   border: 0.4vw inset;
-  background-image: url(/img/spazzygif.gif);
+  background-image: url(img/spazzygif.gif);
 }
 
 .logo {
@@ -75,7 +75,7 @@ img:hover {
   }
 
   .content {
-    background-image: url(/img/paper.jpeg);
+    background-image: url(img/paper.jpeg);
     border: 0.4vw ridge;
     flex: 1;
     margin: 0 auto;
