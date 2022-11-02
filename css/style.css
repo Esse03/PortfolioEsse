@@ -1,10 +1,9 @@
 body {
-  background-image: url(./img/spazzyback.gif);
   color: BlueViolet;
   margin: 0 auto;
   text-align: center;
   font-family: 'Papyrus';
-  
+  background-color: slategray ;
 }
 
 nav {
@@ -15,19 +14,19 @@ nav {
 }
 
 .navi {
-  background:cornsilk ;
+  background:ghostwhite ;
   padding: 1vw;
   flex: 1;
   text-decoration: none;
-  color:darkgoldenrod;
+  color:blueviolet;
   font-size: large;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   align-items: center;
 }
 
 .navi:hover {
-  border: 0.2vw inset;
-  border-color: white;
+  background: blueviolet;
+  color: ghostwhite;
 }
 
 #blankSpace {
@@ -38,150 +37,126 @@ nav {
   object-fit: cover;
   height: 7vh;
   flex: 0;
-  background: cornsilk;
+  background: ghostwhite;
   border: 0.2vw ridge;
+  border-radius: 30px;
 }
 
 header {
-  background-image: url(img/notebook.jpeg);
+  font-size: 2em;
+  text-align: center;
+  background-image: url(/img/notebook.jpeg);
   background-size: cover;
   height: 60vh;
   background-position: center;
-
+  padding-top: 80px;
+  margin-top: -55px;
 }
 
-section {
+.Content {
+  background-image: url(/img/paper.jpeg);
+  border: 0.4vw ridge;
+  flex: 1;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  margin-bottom: 5vw;
+  justify-content: space-evenly;
+  padding: 5vw;
 }
 
-#Mohawk {
-  align-items: center;
+#int {
+  margin-top: -5vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+#int img {
   height: 25vh;
+  border:groove 0.4vw;
+  border-radius: 100px;
+  transition: height 2s;
 }
 
-img:hover {
-  border: 0.4vw inset;
-  background-image: url(img/spazzygif.gif);
-}
-
-.logo {
-  object-fit: cover;
-  height: 6vh;
-}
-  
-  p:hover {
-    color: black;
-  }
-
-  .content {
-    background-image: url(img/paper.jpeg);
-    border: 0.4vw ridge;
-    flex: 1;
-    margin: 0 auto;
-    width: 100vw;
-  }
-
-.content:hover {
-  flex: 2;
-}
-
-.stud {
-  object-fit: cover;
-  height: 45vh;
-  width: 45vw;
-  border-radius: 50px;
-  border: 0.4vw outset;
-}
-
-#scroll {
-  display: flex;
-  justify-content: space-around;
-}
-
-#cactus {
-  object-fit:cover;
+#int img:hover {
   height: 40vh;
-  width: 85%;
-  object-position: top;
-  border: 0.4vw outset;
-  border-radius: 50px;
 }
 
-* {
-  box-sizing: border-box;
+.mapouter {
+  position:relative;
+  text-align:right;
+  height:25vh;
+  width:25vh;
 }
 
-  ul:hover {
-    color:black;
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:25vh;
+  width:25vh;
+  border:groove 0.4vw;
+  border-radius: 20px;
+}
+
+.gmap_canvas:hover {
+  height: 30vh;
+  width: 30vh;
+}
+
+#Social {
+  display: flex;
+  justify-content: right;
+  position: sticky;
+  bottom: 0px;
+  animation: slidein 2s ease-in;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(50px)
   }
 
-  #Info {
-    background: cornsilk;
-    align-items: center;
-    
-    padding: 2vw;
-    padding-bottom: 0px;
+  to {
+    transform: translateY(0px);
+  }
+}
+
+#Social img {
+  object-fit: cover;
+  height: 7vh;
+}
+
+#Social a {
+  font-size: 0;
+  transition: font-size 2s;
+}
+
+#Social a:hover {
+  font-size: 1.5em;
+  color: ghostwhite;
+  text-shadow: 2px 2px 0 black;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column-reverse;
+  }
+  #navImg {
+    display: none;
   }
 
-  #info {
-    display: flex;
-    background: blanchedalmond;
-    justify-content: space-around;
-    padding: 2vw;
-    padding-bottom: 20vw;
+  #Social {
+    flex-direction: column;
+    bottom: auto;
+    text-align: justify;
+    animation: none;
+    padding-left: 10vw;
   }
-
-  .C:hover {
-    background:cornsilk;
+  #Social a {
+    font-size: 1.5em;
+    color: ghostwhite;
+    padding: 3vw;
   }
-
-  @media only screen and (max-width: 768px) {
-
-    section {
-      flex-direction: column;
-    }
-
-    nav {
-      flex-direction:column-reverse;
-    }
-
-    #navImg {
-      height: 3vh;
-      width: 10vw;
-    }
-
-    header {
-      height: 90vh;
-      background-position: center;
-    }
-
-    #info {
-      flex-direction: column;
-    }
-
-    #Info {
-      margin: 0 auto;
-      padding-bottom: 0;
-      margin-bottom: -2vh;
-    }
-
-    .sem1 {
-      display: flex;
-    justify-content: space-between;
-    align-items: center
-    }
-
-    #scroll {
-      overflow-x:scroll;
-      width:90vw;
-      justify-content: flex-start;
-      box-shadow: 1vw 0 1vw gray;
-    }
-
-    .stud {
-      width: 80vw;
-      object-position: center;
-    }
-    
+  #Classes {
+    flex-direction: column;
   }
+}

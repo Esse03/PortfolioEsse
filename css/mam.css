@@ -1,0 +1,152 @@
+body {
+    color: BlueViolet;
+    background: lightslategray;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Papyrus';
+    
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0px;
+  }
+  
+  .navi {
+    background:ghostwhite;
+    padding: 1vw;
+    flex: 1;
+    text-decoration: none;
+    color:blueviolet;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+  }
+  
+  .navi:hover {
+    background: blueviolet;
+    color:ghostwhite;
+  }
+  
+  #blankSpace {
+    flex: 5;
+  }
+  
+  #navImg {
+    object-fit: cover;
+    height: 7vh;
+    flex: 0;
+    background: ghostwhite;
+    border: 0.2vw ridge;
+    border-radius: 30px;
+  }
+
+  header {
+    font-size: 2em;
+    text-align: center;
+    background-image: url(/img/notebook.jpeg);
+    background-size: cover;
+    height: 60vh;
+    background-position: center;
+    padding-top: 80px;
+    margin-top: -55px;
+  }
+
+  .Content {
+    background-image: url(/img/paper.jpeg);
+    border: 0.4vw ridge;
+    flex: 1;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom:5vw ;
+  }
+
+  #Me {
+    margin-top: -5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+
+  #Me img {
+    height: 25vh;
+    border:groove 0.4vw;
+    border-radius: 100px;
+    transition: height 2s;
+  }
+
+  #Me img:hover {
+    height: 40vh;
+  }
+
+  ul {
+    text-align: left;
+  }
+
+  #Goals {
+    flex-direction: column;
+  }
+
+  #ltg {
+    display: flex;
+    justify-content:space-evenly;
+  }
+
+  #Social {
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    bottom: 0px;
+    animation: slidein 2s ease-in;
+  }
+
+  @keyframes slidein {
+    from {
+      transform: translateY(50px)
+    }
+
+    to {
+      transform: translateY(0px);
+    }
+  }
+
+  #Social img {
+    object-fit: cover;
+    height: 7vh;
+  }
+
+  #Social a {
+    font-size: 0;
+    transition: font-size 2s;
+  }
+
+  #Social a:hover {
+    font-size: 1.5em;
+    color: ghostwhite;
+    text-shadow: 2px 2px 0 black;
+  }
+
+  @media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column-reverse;
+    }
+    #navImg {
+      display: none;
+    }
+
+    #Social {
+      flex-direction: column;
+      bottom: auto;
+      text-align: justify;
+      animation: none;
+      padding-left: 10vw;
+    }
+
+    #Social a {
+      font-size: 1.5em;
+      color: ghostwhite;
+      padding: 3vw;
+    }
+  }
