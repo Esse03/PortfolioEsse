@@ -68,6 +68,22 @@ body {
     margin-top: -5vw;
   }
 
+  .Photos {
+    overflow-x:scroll;
+    width:30vw;
+    justify-content: flex-start;
+    box-shadow: 1vw 0 1vw gray;
+    display:flex;
+  }
+
+  .Photos img {
+    object-fit: cover;
+    height: 45vh;
+    width: 45vw;
+    margin: 20px;
+    margin-right: 40px;
+  }
+
   #Social {
     display: flex;
     justify-content: right;
