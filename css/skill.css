@@ -138,7 +138,14 @@ body {
       color: ghostwhite;
       padding: 3vw;
     }
-    #Classes {
+    .Content {
       flex-direction: column;
+    }
+
+    .Photos {
+      width: 100vw;
+    }
+    .Photos img {
+      width: 80vw;
     }
   }
